@@ -15,6 +15,11 @@ func main() {
 
 	contaDaBruna := ContaCorrente{"Bruna", 222, 111222, 200}
 
+	contaDaCris := new(ContaCorrente)
+	contaDaCris.titular = "Cristiane"
+	contaDaCris.saldo = 5000.95
+
 	fmt.Println(contaDoGuilherme)
 	fmt.Println(contaDaBruna)
+	fmt.Println(contaDaCris)
 }
