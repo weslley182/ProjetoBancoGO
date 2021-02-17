@@ -19,7 +19,13 @@ func main() {
 	contaDaCris.titular = "Cristiane"
 	contaDaCris.saldo = 5000.95
 
+	contaDaCris2 := new(ContaCorrente)
+	contaDaCris2.titular = "Cristiane"
+	contaDaCris2.saldo = 5000.95
+
 	fmt.Println(contaDoGuilherme)
 	fmt.Println(contaDaBruna)
-	fmt.Println(contaDaCris)
+	
+	fmt.Println(contaDaCris == contaDaCris2)
+	fmt.Println(*contaDaCris == *contaDaCris2)
 }
