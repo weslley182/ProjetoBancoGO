@@ -22,4 +22,7 @@ func main() {
 	fmt.Println(status)
 	fmt.Println(contaDaSilvia.ObterSaldo())
 	fmt.Println(contaDoGustavo.ObterSaldo())
+
+	contas.PagarBoleto(&contaDaSilvia, 60)
+	fmt.Println(contaDaSilvia.ObterSaldo())
 }
